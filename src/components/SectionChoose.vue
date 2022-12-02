@@ -9,10 +9,10 @@
 
     <div class="contenitore f-mode choose">
       <div class="chooseText">
-        <span>titolo</span>
+        <span>WHY CHOOSE AVADA UNIVERSITY?</span>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis mollitia aliquam delectus repellendus distinctio reiciendis, officia, earum ipsum veritatis enim nobis laborum laboriosam similique sequi accusamus velit, cum modi.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis mollitia aliquam delectus repellendus distinctio reiciendis, officia, earum ipsum veritatis enim nobis laborum laboriosam similique sequi accusamus velit, cum modi.</p>
+          <p>We offer a range of training packages in a range of subject areas and can offer blended learning opportunities to best meet your needs. If sitting in a room with a trainer and having the opportunity for discussion with other learners sounds good to you then we can offer this. If you prefer to study in your own time and at your own speed then on of our world class facilities.</p>
+          <p>If you prefer to study in your own time and at your own speed then one of our e-learning packages may be right up your street. There is a third option, which is you like the sound of both but perhaps can't attend all training session, this is when blended learning comes into its own.</p>
         </div>
       </div>
       <div class="chooseImg">
@@ -63,16 +63,18 @@ section
   {
     text-align: left;
     width: 130%;
-    padding-right: 50px;
+    padding-right: 80px;
     
     span
     {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
     }
     div
     {
       line-height: 1.8rem;
+      margin-top: 30px;
+      color: #4a4b4b;
     }    
   }
   .chooseImg
