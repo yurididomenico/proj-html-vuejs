@@ -57,7 +57,15 @@ export default {
 {
   align-items: center;
 }
-
+////////// BOTTONI ////////////////////////////////////////////////////////////
+.bg-arancione
+{
+  background-color: #f09a3f;
+}
+.bg-azzurrino
+{
+  background-color: #00bcd4;
+}
 
 
 </style>
