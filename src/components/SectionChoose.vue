@@ -16,7 +16,15 @@
         </div>
       </div>
       <div class="chooseImg">
-        <img src="../assets/img/University_img.jpg" alt="">
+        <div class="logoV"><img src="../assets/img/letter-v-128.png" alt=""></div>
+        <div class="titoloVideo">
+          <span class="mainTitle">TVC / Saratov / University</span>
+          <span class="subTitle"><span class="color-white">from</span> N3</span>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -34,13 +42,17 @@ section
 {
   padding: 100px 0;
   text-align: center;
+  .titolo,
+  .sotto_titolo,
+  .linea
+  {
+    margin-bottom: 30px;
+  }
+  
+  
   div
   {
     margin-bottom: 100px;
-  }
-  *
-  {
-    margin-bottom: 30px;
   }
   .linea
   {
@@ -79,11 +91,51 @@ section
   }
   .chooseImg
   {
+    background-image: url('../assets/img/University_img.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
     width: 70%;
     padding-top: 40px;
-    img
+    
+    .logoV
     {
-      width: 100%;
+      width: 50px;
+      background-color: black;
+      border-radius: 100%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      img
+      {
+        display: block;
+        padding: 15px;
+        width: 100%;
+      }
+    }
+    .titoloVideo
+    {
+      color: #00b6fb;
+      position: absolute;
+      top: 20px;
+      left: 70px;
+      .mainTitle
+      {
+        font-size: 1.2rem;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2px;
+        
+      }
+      .subTitle
+      {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2px;
+        position: absolute;
+        top: 26px;
+        left: 0;
+      }
+      
     }
   }
   

@@ -66,6 +66,11 @@ export default {
 {
   background-color: #00bcd4;
 }
+.color-white
+{
+  color: white;
+}
+
 
 
 </style>
