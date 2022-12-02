@@ -1,8 +1,10 @@
 <template>
   <section>
     <div>
-      <div class="titolo">Inspiring Tomorrows Leaders</div>
-      <div class="sotto_titolo">The Future Belongs To Those Who See Poossibilities Today</div>
+      <div>
+        <div class="titolo">Inspiring Tomorrows Leaders</div>
+        <div class="sotto_titolo">The Future Belongs To Those Who See Poossibilities Today</div>
+      </div>
       <div class="bottoni">
         <a href="#" class="bg-arancione">FIND A COURSE</a>
         <a href="#" class="bg-azzurrino">APPLY NOW</a>
@@ -21,13 +23,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 
 section
 {
   background-image: url('../assets/img/home_main_slider_bg.jpg');
   background-position: center;
-  font-family: 'Playfair Display SC', serif;
+  // font-family: 'Playfair Display SC', serif;
 
   color: white;
   >div
