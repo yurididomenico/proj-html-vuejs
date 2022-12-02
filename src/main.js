@@ -4,11 +4,15 @@ import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+import { faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faYoutube, faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* add icons to the library */
-library.add(faHatWizard)
+library.add(
+  faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
+  faFacebookF, faTwitter, faYoutube, faInstagram
+)
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

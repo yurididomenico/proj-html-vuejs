@@ -4,20 +4,33 @@
     <div class="contenitore f-mode f-justify-between f-align-center">
       <!-- Lista contatti navbar -->
       <ul class="f-mode">
-        <li><span>[]</span> 1.800.567.8910 <span>24hrs</span></li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-phone-flip" class="iconeHeader"/>
+          <span>1.800.567.8910</span>
+          <span>24hrs</span>
+        </li>
         
-        <li><span>[]</span>Contact Us</li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-envelope" class="iconeHeader"/>
+          <span>Contact Us</span>
+        </li>
         
-        <li><span>[]</span>Alumns</li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-graduation-cap" class="iconeHeader"/>
+          <span>Alumns</span>
+        </li>
         
-        <li><span>[]</span>Campus</li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-building-columns" class="iconeHeader"/>
+          <span>Campus</span>
+        </li>
       </ul>
       <!-- Lista social navbar -->
-      <ul class="f-mode">
-        <li>[]</li>
-        <li>[]</li>
-        <li>[]</li>
-        <li>[]</li>
+      <ul class="f-mode f-align-center">
+        <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+        <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+        <li><font-awesome-icon icon="fa-brands fa-youtube" /></li>
+        <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
       </ul>
     </div>
   </header>
@@ -37,9 +50,14 @@ header
   background-color: #ffab0b;
   color: white;
   padding: 15px;
+  font-size: 0.8rem;
   li
   {
-    margin-right: 20px;
+    margin-right: 15px;
+    .iconeHeader
+    {
+      margin-right: 15px;
+    }
     span
     {
       margin-right: 10px;
