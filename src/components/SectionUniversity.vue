@@ -1,10 +1,29 @@
 <template>
   <section>
-    <div>
+    <div class="contenitore">
       <img src="../assets/img/page-logo-1.png" alt="">
       <p class="titolo">Today's University News</p>
       <p class="sotto_titolo">Covering topics from classes to politics and student organization events.</p>
       <div class="linea"></div>
+
+      <div class="carte f-mode">
+        <div>
+          <img src="" alt="">
+          <h3>titolo</h3>
+          <div>testo</div>
+          <div class="f-mode">
+            <a href="#">
+              <span>Read More</span>
+              <span>[]</span>
+            </a>
+            <a href="#">
+              <span>[]</span>
+              <span>0</span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </section>
 </template>
@@ -47,6 +66,17 @@ section
     background-color: #f5c085;
     margin: auto;
     margin-bottom: 80px;
+  }
+
+
+
+  .carte
+  {
+    >div
+    {
+      width: calc(100% / 3);
+      text-align: left;
+    }
   }
 }
 </style>
