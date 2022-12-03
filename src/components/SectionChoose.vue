@@ -57,10 +57,10 @@ section
   padding: 100px 0 0;
   text-align: center;
 
-  >div>img
-  {
-    margin-bottom: 40px;
-  }
+  // >div>img:not(.divisione_Triangolare)
+  // {
+  //   margin-bottom: 40px;
+  // }
   .titolo,
   .sotto_titolo
   {
@@ -83,6 +83,7 @@ section
   {
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 40px;
   }
   .sotto_titolo
   {
