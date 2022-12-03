@@ -54,7 +54,7 @@ export default {
 
 section
 {
-  padding: 100px 0;
+  padding: 100px 0 0;
   text-align: center;
   .titolo,
   .sotto_titolo,
@@ -203,6 +203,7 @@ section
     img
     {
       width: 100%;
+      display: block;
     }
   }
 }
