@@ -38,6 +38,9 @@
         </div>
       </div>
     </div>
+    <div class="divisione_Triangolare">
+      <img src="../assets/img/YDD_Triangolo.png" alt="">
+    </div>
   </section>
 </template>
 
@@ -58,6 +61,10 @@ section
   .linea
   {
     margin-bottom: 30px;
+  }
+  .choose
+  {
+    padding-bottom: 50px;
   }
   
   .linea
@@ -150,6 +157,7 @@ section
     .control_panel
     {
       color: white;
+      padding: 10px;
       a
       { 
         background: rgba(0, 0, 0, 0.8);
@@ -169,7 +177,7 @@ section
         width: 340px;
         display: flex;
         align-items: center;
-        padding: 5px;
+        padding: 5px 10px;
         .durataVideo
         {
           border: 2px solid grey;
@@ -189,7 +197,14 @@ section
       
     }
   }
-  
+  .divisione_Triangolare
+  {
+    width: 100%;
+    img
+    {
+      width: 100%;
+    }
+  }
 }
 
 </style>
