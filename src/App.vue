@@ -57,6 +57,7 @@ export default {
 {
   align-items: center;
 }
+
 .flex-wrap
 {
   flex-wrap: wrap
