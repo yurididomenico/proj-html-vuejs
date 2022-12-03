@@ -26,14 +26,14 @@
         <!-- pulsante play e control panel del video -->
         <div class="control_panel">
           <!-- pulsante -->
-          <a href="#">[]</a>
+          <a href="#"><font-awesome-icon icon="fa-solid fa-play" /></a>
           <!-- control panel -->
           <div class="barraVimeo">
-            <span class="durataVideo"></span>
-            <span>[]</span>
-            <span>[]</span>
-            <span>[]</span>
-            <span>Vimeo</span>
+            <div class="durataVideo"></div>
+            <div><font-awesome-icon icon="fa-solid fa-signal" class="fa-segnale"/></div>
+            <div><font-awesome-icon icon="fa-solid fa-gear" /></div>
+            <div><font-awesome-icon icon="fa-solid fa-maximize" /></div>
+            <div>Vimeo</div>
           </div>
         </div>
       </div>
@@ -149,20 +149,44 @@ section
 
     .control_panel
     {
-      background: rgba(0, 0, 0, 0.2);
       color: white;
       a
-      {
+      { 
+        background: rgba(0, 0, 0, 0.8);
+        padding: 6px 25px;
+        font-size: 1.4rem;
+        border-radius: 6px;
         position: absolute;
-        top: 65%;
-        left: 40px;
+        top: 190px;
+        left: 10px;        
       }
       .barraVimeo
-      {
+      { 
+        background: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 65%;
+        top: 199px;
         left: 80px;
+        width: 340px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        .durataVideo
+        {
+          border: 2px solid grey;
+          height: 10px;
+          width: 50%;
+        }
+        div
+        {
+          padding-right: 10px;
+        }
+        .fa-segnale
+        {
+          color: #00b5fb;
+          padding-left: 10px;
+        }
       }
+      
     }
   }
   

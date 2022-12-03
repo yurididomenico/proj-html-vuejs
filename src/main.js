@@ -4,13 +4,13 @@ import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns } from '@fortawesome/free-solid-svg-icons'
+import { faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns, faPlay, faSignal, faGear, faMaximize } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faTwitter, faYoutube, faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* add icons to the library */
 library.add(
-  faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
+  faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns, faPlay, faSignal, faGear, faMaximize,
   faFacebookF, faTwitter, faYoutube, faInstagram
 )
 /* add font awesome icon component */
