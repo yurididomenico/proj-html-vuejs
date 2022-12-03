@@ -3,6 +3,7 @@
     <SectionJumbotron/>
     <SectionChoose/>
     <SectionClass/>
+    <SectionEvents/>
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import SectionJumbotron from './SectionJumbotron.vue'
 import SectionChoose from './SectionChoose.vue'
 import SectionClass from './SectionClass.vue'
+import SectionEvents from './SectionEvents.vue'
 
 export default {
   name: 'ComponenteMain',
   components: {
     SectionJumbotron,
     SectionChoose,
-    SectionClass
+    SectionClass,
+    SectionEvents
   }
 }
 </script>

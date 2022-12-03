@@ -57,8 +57,7 @@ section
   padding: 100px 0 0;
   text-align: center;
   .titolo,
-  .sotto_titolo,
-  .linea
+  .sotto_titolo
   {
     margin-bottom: 30px;
   }
@@ -73,6 +72,7 @@ section
     height: 1px;
     background-color: #f5c085;
     margin: auto;
+    margin-bottom: 80px;
   }
   .titolo
   {
