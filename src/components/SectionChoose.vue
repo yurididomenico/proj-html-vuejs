@@ -16,14 +16,25 @@
         </div>
       </div>
       <div class="chooseImg">
+        <!-- logo -->
         <div class="logoV"><img src="../assets/img/letter-v-128.png" alt=""></div>
+        <!-- titolo video e canale -->
         <div class="titoloVideo">
           <span class="mainTitle">TVC / Saratov / University</span>
           <span class="subTitle"><span class="color-white">from</span> N3</span>
         </div>
-        <div>
-          <div></div>
-          <div></div>
+        <!-- pulsante play e control panel del video -->
+        <div class="control_panel">
+          <!-- pulsante -->
+          <a href="#">[]</a>
+          <!-- control panel -->
+          <div class="barraVimeo">
+            <span class="durataVideo"></span>
+            <span>[]</span>
+            <span>[]</span>
+            <span>[]</span>
+            <span>Vimeo</span>
+          </div>
         </div>
       </div>
     </div>
@@ -49,11 +60,6 @@ section
     margin-bottom: 30px;
   }
   
-  
-  div
-  {
-    margin-bottom: 100px;
-  }
   .linea
   {
     width: 150px;
@@ -89,6 +95,10 @@ section
       color: #4a4b4b;
     }    
   }
+
+
+
+
   .chooseImg
   {
     background-image: url('../assets/img/University_img.jpg');
@@ -96,7 +106,6 @@ section
     background-size: contain;
     position: relative;
     width: 70%;
-    padding-top: 40px;
     
     .logoV
     {
@@ -136,6 +145,24 @@ section
         left: 0;
       }
       
+    }
+
+    .control_panel
+    {
+      background: rgba(0, 0, 0, 0.2);
+      color: white;
+      a
+      {
+        position: absolute;
+        top: 65%;
+        left: 40px;
+      }
+      .barraVimeo
+      {
+        position: absolute;
+        top: 65%;
+        left: 80px;
+      }
     }
   }
   
