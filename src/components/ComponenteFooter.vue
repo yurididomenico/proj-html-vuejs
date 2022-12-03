@@ -1,12 +1,20 @@
 <template>
   <main>
-    FOOTER
+    <AboutUs/>
+    <CreditsSite/>
   </main>
 </template>
 
 <script>
+import AboutUs from './AboutUs.vue'
+import CreditsSite from './CreditsSite.vue'
+
 export default {
-  name: 'ComponenteFooter'
+  name: 'ComponenteFooter',
+  components: {
+    AboutUs,
+    CreditsSite
+  }
  
 }
 </script>

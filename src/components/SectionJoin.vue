@@ -6,7 +6,7 @@
       <form>
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
-        <input type="number" placeholder="Telephone">
+        <input type="tel" placeholder="Telephone">
         <a href="#">APPLY NOW</a>
 
       </form>
