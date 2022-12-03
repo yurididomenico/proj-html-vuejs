@@ -56,6 +56,11 @@ section
 {
   padding: 100px 0 0;
   text-align: center;
+
+  >div>img
+  {
+    margin-bottom: 40px;
+  }
   .titolo,
   .sotto_titolo
   {
