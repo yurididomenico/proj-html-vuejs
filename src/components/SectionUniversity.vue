@@ -6,20 +6,58 @@
       <p class="sotto_titolo">Covering topics from classes to politics and student organization events.</p>
       <div class="linea"></div>
 
-      <div class="carte f-mode">
-        <div>
-          <img src="" alt="">
-          <h3>titolo</h3>
-          <div>testo</div>
-          <div class="f-mode">
-            <a href="#">
-              <span>Read More</span>
-              <span>[]</span>
-            </a>
-            <a href="#">
-              <span>[]</span>
-              <span>0</span>
-            </a>
+      <div class="area-carte f-mode f-justify-between">
+        <div class="carta image_1">
+          <img src="../assets/img/news_single_post_header_1-800x444.jpg" alt="">
+          <div>
+            <h3>titolo</h3>
+            <div>testo</div>
+            <div class="f-mode f-justify-between">
+              <a href="#">
+                <span>Read More</span>
+                <span>[]</span>
+              </a>
+              <a href="#">
+                <span>[]</span>
+                <span>0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carta image_2">
+          <img src="../assets/img/news_single_post_header_2-800x444.jpg" alt="">
+          <div>
+            <h3>titolo</h3>
+            <div>testo</div>
+            <div class="f-mode f-justify-between">
+              <a href="#">
+                <span>Read More</span>
+                <span>[]</span>
+              </a>
+              <a href="#">
+                <span>[]</span>
+                <span>0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carta image_3">
+          <img src="../assets/img/news_single_post_header_3-800x444.jpg" alt="">
+          <div>
+            <h3>titolo</h3>
+            <div>testo</div>
+            <div class="f-mode f-justify-between">
+              <a href="#">
+                <span>Read More</span>
+                <span>[]</span>
+              </a>
+              <a href="#">
+                <span>[]</span>
+                <span>0</span>
+              </a>
+            </div>
           </div>
         </div>
         
@@ -70,13 +108,40 @@ section
 
 
 
-  .carte
+  .area-carte
   {
     >div
     {
-      width: calc(100% / 3);
+      width: calc((100% / 3) - 20px);
+      aspect-ratio: 2/1;
       text-align: left;
+
+      >div
+      {
+        padding: 20px
+      }
     }
+
+    
+
+    .image_1
+    {
+      // background-image: url('../assets/img/news_single_post_header_1-800x444.jpg');
+    }
+    .image_2
+    {
+      // background-image: url('../assets/img/news_single_post_header_2-800x444.jpg');
+    }
+    .image_3
+    {
+      // background-image: url('../assets/img/news_single_post_header_3-800x444.jpg');
+    }
+
+    img
+    {
+      width: 100%;
+    }
+
   }
 }
 </style>
