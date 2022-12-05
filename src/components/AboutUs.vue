@@ -141,7 +141,8 @@ export default {
 <style scoped lang="scss">
 footer
 {
-  padding: 100px;
+  padding: 100px 100px 0;
+  border-bottom: 1px solid rgb(237, 237, 237);
   
 
   .dinamiche

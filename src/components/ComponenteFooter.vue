@@ -1,8 +1,8 @@
 <template>
-  <main>
+  <footer>
     <AboutUs/>
     <CreditsSite/>
-  </main>
+  </footer>
 </template>
 
 <script>
@@ -21,5 +21,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+footer
+{
+  background-image: url('../assets/img/university_ft_bg.png');
+  background-size: cover;
+}
 </style>

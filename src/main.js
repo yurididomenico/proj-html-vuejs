@@ -9,7 +9,7 @@ import { faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
          faPlus, faChevronRight, faComments, faHouseChimney
         } from '@fortawesome/free-solid-svg-icons'
 
-import { faEnvelope as faEnvelopeRegular, faClock } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope as faEnvelopeRegular, faClock, faCopyright } from '@fortawesome/free-regular-svg-icons'
 
 
         
@@ -21,7 +21,7 @@ library.add(
   faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
   faPlay, faSignal, faGear, faMaximize, faGlobe, faAddressBook,
   faPlus, faChevronRight, faComments, faHouseChimney, faEnvelopeRegular,
-  faClock,
+  faClock, faCopyright,
   faFacebookF, faTwitter, faYoutube, faInstagram
 )
 /* add font awesome icon component */
