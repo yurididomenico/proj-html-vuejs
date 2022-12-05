@@ -2,6 +2,8 @@
   <section>
     <div class="contenitore">
       <h2>Joining Over <span>500,000 Students </span>Enjoying Avada Education now</h2>
+      <img src="../assets/img/YDD_Underline_Students_6.png" alt="">
+      <!-- <img src="../assets/img/YDD_Underline_Students.png" alt=""> -->
       <p>Become Part of Avada University to Further Your Career</p>
       <form>
         <input type="text" placeholder="Name">
@@ -27,15 +29,33 @@ section
   text-align: center;
   padding: 100px 0;
 
+  .contenitore
+  {
+    position: relative;
+
+    img
+    {
+      width: 315px;
+      height: 15px;
+      position: absolute;
+      top: 37px;
+      left: 323px;
+    }
+  }
+
   h2
   {
     color: white;
     font-size: 2rem;
+    margin-bottom: 10px;
+
     span
     {
-      color: #ffab0b;
+      color: #fea13e;
     }
   }
+
+  
 
   p
   {
