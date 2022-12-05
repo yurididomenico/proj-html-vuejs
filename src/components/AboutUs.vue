@@ -98,17 +98,35 @@
         </ul>
       </div>
     </div>
-    <div>
+    <div class="upcoming">
       <h3>UPCOMING EVENTS</h3>
-      <!-- <ul>
-        <li class="f-mode">
-          <div>[]</div>
-          <div>
+      <ul>
+        <li class="f-mode f-align-center">
+          <div class="calendar">
+            <div>FRI</div>
+            <span>27</span>
+          </div>
+          <div class="events-info">
             <h5>Business Seminar</h5>
-            <p>July</p>
+            <p>July 1, 2019 @ 8:00 am - July 1, 2021 @ 5:00 pm</p>
+            <p>United States</p>
+          </div>
+
+        </li>
+
+        <li class="f-mode f-align-center">
+          <div class="calendar">
+            <div>FRI</div>
+            <span>27</span>
+          </div>
+          <div class="events-info">
+            <h5>Politics Seminar</h5>
+            <p>November 6, 2019 @ 8:00 am - November 6, 2021 @ 5:00 pm</p>
+            <p>United Kingdom</p>
           </div>
         </li>
-      </ul> -->
+      </ul>
+      <a href="#@">View More...</a>
     </div>
   </footer>
 </template>
@@ -205,6 +223,60 @@ footer
         margin-top: 10px;
       }
     
+    }
+  }
+
+  .upcoming
+  {
+    ul
+    {
+      li
+      {
+        border-bottom: 1px solid rgb(237, 237, 237);
+        margin-bottom: 20px;
+        .calendar
+        {
+          background-color: #f09a3f;
+          color: white;
+          padding: 3px;
+          margin-right: 20px;
+          
+
+          div
+          {
+            background-color: white;
+            color: #f09a3f;
+            font-size: 0.6rem;
+            font-weight: bold;
+            padding: 15px;
+            padding-right: 13px;
+          }
+          span
+          {
+            text-align: center;
+            display: block;
+            font-weight: bold;
+          }
+
+        }
+        .events-info
+        {
+          >*
+          {
+            margin-bottom: 15px;
+          }
+          p
+          {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    a
+    {
+      font-size: 0.8rem;
+      font-weight: bold;
     }
   }
 }
