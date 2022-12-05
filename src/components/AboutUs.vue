@@ -59,8 +59,14 @@
         
       </ul>
     </div>
+
+
+
+
     <div class="dinamiche f-mode flex-wrap">
-      <div>
+      <!-- Static -->
+      <!-- --------------------------------------------------------------------------------------------------------- -->
+      <!-- <div>
         <h3>COURSES</h3>
         <ul>
           <li>Arts & Humanities</li>
@@ -96,8 +102,27 @@
           <li>Campus Services</li>
           <li>Careers</li>
         </ul>
+      </div> -->
+      <!-- --------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+      <!-- Dinamic -->
+      <!-- --------------------------------------------------------------------------------------------------------- -->
+      <div v-for="(elem, index) in linkFooter" :key="index">
+        <h3>{{elem.titolo.toUpperCase()}}</h3>
+        <ul>
+          <li v-for="(elem, index) in elem.li" :key="index">
+            <a href="">{{elem.testo}}</a>
+          </li>
+        </ul>
       </div>
+      <!-- --------------------------------------------------------------------------------------------------------- -->
+
     </div>
+
+
     <div class="upcoming">
       <h3>UPCOMING EVENTS</h3>
       <ul>
@@ -126,14 +151,18 @@
           </div>
         </li>
       </ul>
-      <a href="#@">View More...</a>
+      <a href="#">View More...</a>
     </div>
   </footer>
 </template>
 
 <script>
+
 export default {
-  name: 'AboutUs'
+  name: 'AboutUs',
+  props: {
+    linkFooter: Array
+  }
 }
 </script>
 

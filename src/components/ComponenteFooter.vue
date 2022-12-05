@@ -1,6 +1,7 @@
 <template>
   <footer>
-    <AboutUs/>
+    <AboutUs
+    :linkFooter="linkFooter"/>
     <CreditsSite/>
   </footer>
 </template>
@@ -14,8 +15,10 @@ export default {
   components: {
     AboutUs,
     CreditsSite
+  },
+  props: {
+    linkFooter: Array
   }
- 
 }
 </script>
 

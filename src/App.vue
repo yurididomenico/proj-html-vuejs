@@ -5,7 +5,8 @@
     :contacts="contacts"
     :social="social"/>
     <ComponenteMain/>
-    <ComponenteFooter/>
+    <ComponenteFooter
+    :linkFooter="linkFooter"/>
   </div>
 </template>
 
@@ -119,8 +120,108 @@ export default {
         },
         
         
-      ]
+      ],
 
+      linkFooter:
+      [
+        {
+          titolo: 'Courses',
+          li:
+          [
+            {
+              testo: "Arts & Humanities",
+              link: "#"
+            },
+            {
+              testo: "Business & Management",
+              link: "#"
+            },
+            {
+              testo: "Engineering & Technology",
+              link: "#"
+            },
+            {
+              testo: "Life Sciences & Medicine",
+              link: "#"
+            },
+            {
+              testo: "Natural Sciences",
+              link: "#"
+            }
+          ],
+          link: '#'
+        },
+        {
+          titolo: 'Resources',
+          li:
+          [
+            {
+              testo: "Campus Directory",
+              link: "#"
+            },
+            {
+              testo: "Academic Calendar",
+              link: "#"
+            },
+            {
+              testo: "Sport Clubs",
+              link: "#"
+            },
+            {
+              testo: "Graduate Programs",
+              link: "#"
+            },
+            {
+              testo: "Faculty & Staff",
+              link: "#"
+            }
+          ],
+          link: '#'
+        },
+        {
+          titolo: 'Admission',
+          li:
+          [
+            {
+              testo: "Eligibility",
+              link: "#"
+            },
+            {
+              testo: "Application",
+              link: "#"
+            },
+            {
+              testo: "Review Process",
+              link: "#"
+            },
+            {
+              testo: "How to Apply",
+              link: "#"
+            }
+          ],
+          link: '#'
+        },
+        {
+          titolo: 'courses',
+          li:
+          [
+            {
+              testo: "University Library",
+              link: "#"
+            },
+            {
+              testo: "Campus Services",
+              link: "#"
+            },
+            {
+              testo: "Careers",
+              link: "#"
+            }
+          ],
+          link: '#'
+        }
+        
+      ]
     }
   }
 }

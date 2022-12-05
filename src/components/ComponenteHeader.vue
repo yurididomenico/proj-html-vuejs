@@ -100,7 +100,7 @@
           <li v-for="(elem, index) in linkNavbar" :key="index"
             :id="(index == 0) ? 'paginaAttiva' : ''">
             <a :href="elem.link">  
-              {{elem.testo}}
+              {{elem.testo.toUpperCase()}}
               <span class="badge bg_ciano" v-if="(elem.badge == true)">
                 {{elem.textBadge}}
               </span>
