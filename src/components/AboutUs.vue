@@ -63,42 +63,53 @@
       <div>
         <h3>COURSES</h3>
         <ul>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
+          <li>Arts & Humanities</li>
+          <li>Business & Management</li>
+          <li>Engineering & Technology</li>
+          <li>Life Sciences & Medicine</li>
+          <li>Natural Sciences</li>
         </ul>
       </div>
       <div>
         <h3>RESOURCES</h3>
         <ul>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
+          <li>Campus Directory</li>
+          <li>Academic Calendar</li>
+          <li>Sport Clubs</li>
+          <li>Graduate Programs</li>
+          <li>Faculty & Staff</li>
         </ul>
       </div>
       <div>
         <h3>ADMISSION</h3>
         <ul>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
+          <li>Eligibility</li>
+          <li>Application</li>
+          <li>Review Process</li>
+          <li>How to Apply</li>
         </ul>
       </div>
       <div>
         <h3>QUICKLINKS</h3>
         <ul>
-          <li>li_testo</li>
-          <li>li_testo</li>
-          <li>li_testo</li>
+          <li>University Library</li>
+          <li>Campus Services</li>
+          <li>Careers</li>
         </ul>
       </div>
     </div>
-    <div><h3>UPCOMING EVENTS</h3><span>a</span></div>
+    <div>
+      <h3>UPCOMING EVENTS</h3>
+      <!-- <ul>
+        <li class="f-mode">
+          <div>[]</div>
+          <div>
+            <h5>Business Seminar</h5>
+            <p>July</p>
+          </div>
+        </li>
+      </ul> -->
+    </div>
   </footer>
 </template>
 
@@ -113,17 +124,27 @@ export default {
 footer
 {
   padding: 100px;
-  >div
-  {
-    flex-basis: 20%;
-  }
+  
 
   .dinamiche
   {
+    width: 800px;
+
     >div
     {
       flex-basis: 50%;
       margin-bottom: 50px;
+
+      >ul
+      {
+        
+        >li
+        {
+          margin-bottom: 20px;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+      }
     }
   }
 
@@ -135,6 +156,7 @@ footer
   .avada-university
   {
     padding-right: 70px;
+    width: 300px;
     li
     {
       display: flex;
@@ -151,6 +173,8 @@ footer
   .recent-posts
   {
     padding-right: 70px;
+    width: 450px;
+
     li
     {
       padding-bottom: 10px;
