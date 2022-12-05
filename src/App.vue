@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <ComponenteHeader/>
+    <ComponenteHeader
+    :linkNavbar="linkNavbar"/>
     <ComponenteMain/>
     <ComponenteFooter/>
   </div>
@@ -17,6 +18,56 @@ export default {
     ComponenteHeader,
     ComponenteMain,
     ComponenteFooter
+  },
+  data()
+  {
+    return {
+      linkNavbar:
+      [
+        {
+          testo: "Home",
+          link: "#",
+          badge: false,
+          textBadge: ""
+        },
+        {
+          testo: "About",
+          link: "#",
+          badge: false,
+          textBadge: ""
+        },
+        {
+          testo: "Courses",
+          link: "#",
+          badge: true,
+          textBadge: "New"
+        },
+        {
+          testo: "Events",
+          link: "#",
+          badge: false,
+          textBadge: ""
+        },
+        {
+          testo: "Facilities",
+          link: "#",
+          badge: false,
+          textBadge: ""
+        },
+        {
+          testo: "News",
+          link: "#",
+          badge: false,
+          textBadge: ""
+        },
+        {
+          testo: "Admissions",
+          link: "#",
+          badge: true,
+          textBadge: "Apply"
+        }
+      ]
+    }
   }
 }
 </script>

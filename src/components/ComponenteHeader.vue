@@ -49,13 +49,22 @@
 
         <!-- Header menu lista -->
         <ul class="f-mode">
-          <li class="paginaAttiva">HOME</li>
+          <!-- <li class="paginaAttiva">{{linkNavbar[0].testo}}</li>
           <li>ABOUT</li>
           <li>COURSES <span class="badge">NEW</span></li>
           <li>EVENTS</li>
           <li>FACILITIES</li>
           <li>NEWS</li>
-          <li>ADMISSIONS <span class="badge">APPLY</span></li>
+          <li>ADMISSIONS <span class="badge">APPLY</span></li> -->
+
+          <li v-for="(elem, index) in linkNavbar" :key="index"
+            :id="(index == 0) ? 'paginaAttiva' : ''">
+            {{elem.testo}}
+            <span class="badge" v-if="(elem.badge == true)">
+              {{elem.textBadge}}
+            </span>
+          </li>
+
         </ul>
       </div>
   </header>
@@ -63,8 +72,11 @@
 
 <script>
 export default {
-  name: 'ComponenteHeader'
- 
+  name: 'ComponenteHeader',
+  props: 
+  {
+    linkNavbar: Array
+  }  
 }
 </script>
 
@@ -108,7 +120,7 @@ header
       font-size: 0.9rem;
       margin-left: 20px;
     }
-    .paginaAttiva
+    #paginaAttiva
     {
       color: #f09a3f;
     }
