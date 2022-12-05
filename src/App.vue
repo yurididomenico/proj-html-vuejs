@@ -66,6 +66,16 @@ export default {
           badge: true,
           textBadge: "Apply"
         }
+      ],
+
+      contacts:
+      [
+        {
+          testo: "Home",
+          link: "#",
+          iconaTest: false,
+          icona: ""
+        },
       ]
     }
   }

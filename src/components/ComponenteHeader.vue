@@ -10,23 +10,28 @@
             <li>
               <font-awesome-icon icon="fa-solid fa-phone-flip" class="iconeHeader"/>
               <span>1.800.567.8910</span>
-              <span>24hrs</span>
+              <span class="badge bg_arancione_trasparente">24hrs</span>
             </li>
-            
             <li>
               <font-awesome-icon icon="fa-solid fa-envelope" class="iconeHeader"/>
               <span>Contact Us</span>
             </li>
-            
             <li>
               <font-awesome-icon icon="fa-solid fa-graduation-cap" class="iconeHeader"/>
               <span>Alumns</span>
             </li>
-            
             <li>
               <font-awesome-icon icon="fa-solid fa-building-columns" class="iconeHeader"/>
               <span>Campus</span>
             </li>
+
+            <!-- <li>
+              <font-awesome-icon icon="fa-solid fa-phone-flip" class="iconeHeader"/>
+              <span>1.800.567.8910</span>
+              <span>24hrs</span>
+            </li> -->
+
+
           </ul>
           <!-- Lista social navbar -->
           <ul class="f-mode f-align-center iconeSocial">
@@ -49,6 +54,8 @@
 
         <!-- Header menu lista -->
         <ul class="f-mode">
+          <!-- Static -->
+          <!-- --------------------------------------------------------------------------------------------------------- -->
           <!-- <li class="paginaAttiva">{{linkNavbar[0].testo}}</li>
           <li>ABOUT</li>
           <li>COURSES <span class="badge">NEW</span></li>
@@ -56,14 +63,23 @@
           <li>FACILITIES</li>
           <li>NEWS</li>
           <li>ADMISSIONS <span class="badge">APPLY</span></li> -->
+          <!-- --------------------------------------------------------------------------------------------------------- -->
 
+
+
+          <!-- Dinamic -->
+          <!-- --------------------------------------------------------------------------------------------------------- -->
           <li v-for="(elem, index) in linkNavbar" :key="index"
             :id="(index == 0) ? 'paginaAttiva' : ''">
-            {{elem.testo}}
-            <span class="badge" v-if="(elem.badge == true)">
-              {{elem.textBadge}}
-            </span>
+            <a :href="elem.link">  
+              {{elem.testo}}
+              <span class="badge bg_ciano" v-if="(elem.badge == true)">
+                {{elem.textBadge}}
+              </span>
+            </a>
           </li>
+          <!-- --------------------------------------------------------------------------------------------------------- -->
+
 
         </ul>
       </div>
@@ -135,11 +151,18 @@ header
 
   .badge
   {
-    background-color: #00bcd4;
     color: white;
     font-size: 0.5rem;
     padding: 3px 5px;
     border-radius: 5px;
+  }
+  .bg_ciano
+  {
+    background-color: #00bcd4;
+  }
+  .bg_arancione_trasparente
+  {
+    background: rgba(231, 134, 32, 0.8);
   }
 }
 </style>
