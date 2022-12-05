@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <ComponenteHeader
-    :linkNavbar="linkNavbar"/>
+    :linkNavbar="linkNavbar"
+    :contacts="contacts"
+    :social="social"/>
     <ComponenteMain/>
     <ComponenteFooter/>
   </div>
@@ -25,58 +27,100 @@ export default {
       linkNavbar:
       [
         {
-          testo: "Home",
-          link: "#",
+          testo: 'Home',
+          link: '#',
           badge: false,
-          textBadge: ""
+          textBadge: ''
         },
         {
-          testo: "About",
-          link: "#",
+          testo: 'About',
+          link: '#',
           badge: false,
-          textBadge: ""
+          textBadge: ''
         },
         {
-          testo: "Courses",
-          link: "#",
+          testo: 'Courses',
+          link: '#',
           badge: true,
-          textBadge: "New"
+          textBadge: 'New'
         },
         {
-          testo: "Events",
-          link: "#",
+          testo: 'Events',
+          link: '#',
           badge: false,
-          textBadge: ""
+          textBadge: ''
         },
         {
-          testo: "Facilities",
-          link: "#",
+          testo: 'Facilities',
+          link: '#',
           badge: false,
-          textBadge: ""
+          textBadge: ''
         },
         {
-          testo: "News",
-          link: "#",
+          testo: 'News',
+          link: '#',
           badge: false,
-          textBadge: ""
+          textBadge: ''
         },
         {
-          testo: "Admissions",
-          link: "#",
+          testo: 'Admissions',
+          link: '#',
           badge: true,
-          textBadge: "Apply"
+          textBadge: 'Apply'
         }
       ],
 
       contacts:
       [
         {
-          testo: "Home",
-          link: "#",
-          iconaTest: false,
-          icona: ""
+          testo: '1.800.567.8910',
+          link: '#',
+          badge: true,
+          icona: 'fa-phone-flip'
         },
+        {
+          testo: 'Contact Us',
+          link: '#',
+          badge: false,
+          icona: 'fa-envelope'
+        },
+        {
+          testo: 'Alumns',
+          link: '#',
+          badge: false,
+          icona: 'fa-graduation-cap'
+        },
+        {
+          testo: 'Campus',
+          link: '#',
+          badge: false,
+          icona: 'fa-building-columns'
+        }
+        
+      ],
+
+      social:
+      [
+        {
+          link: '#',
+          icona: 'fa-facebook-f'
+        },
+        {
+          link: '#',
+          icona: 'fa-twitter'
+        },
+        {
+          link: '#',
+          icona: 'fa-youtube'
+        },
+        {
+          link: '#',
+          icona: 'fa-instagram'
+        },
+        
+        
       ]
+
     }
   }
 }

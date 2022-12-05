@@ -7,6 +7,9 @@
         <div class="f-mode f-justify-between f-align-center">
           <!-- Lista contatti navbar -->
           <ul class="f-mode">
+            <!-- Static -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <!-- 
             <li>
               <font-awesome-icon icon="fa-solid fa-phone-flip" class="iconeHeader"/>
               <span>1.800.567.8910</span>
@@ -23,22 +26,47 @@
             <li>
               <font-awesome-icon icon="fa-solid fa-building-columns" class="iconeHeader"/>
               <span>Campus</span>
-            </li>
-
-            <!-- <li>
-              <font-awesome-icon icon="fa-solid fa-phone-flip" class="iconeHeader"/>
-              <span>1.800.567.8910</span>
-              <span>24hrs</span>
             </li> -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
 
+
+            <!-- Dinamic -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <li v-for="(elem, index) in contacts" :key="index">
+              <a :href="elem.link">
+                <font-awesome-icon :icon="`fa-solid ${elem.icona}`" class="iconeHeader"/>
+                <span>{{elem.testo}}</span>
+                <span v-if="elem.badge == true" class="badge bg_arancione_trasparente">24hrs</span>
+              </a>
+            </li>
+            <!-- --------------------------------------------------------------------------------------------------------- -->
 
           </ul>
+
+
+
+
           <!-- Lista social navbar -->
           <ul class="f-mode f-align-center iconeSocial">
-            <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+            <!-- Static -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <!-- <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
             <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
             <li><font-awesome-icon icon="fa-brands fa-youtube" /></li>
-            <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-instagram" /></li> -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+
+
+            <!-- Dinamic -->
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <li v-for="(elem, index) in social" :key="index">
+              <a :href="elem.link">
+                <font-awesome-icon :icon="`fa-brands ${elem.icona}`"/>
+              </a>
+            </li>
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+
+
           </ul>
         </div>
       </div>
@@ -91,7 +119,9 @@ export default {
   name: 'ComponenteHeader',
   props: 
   {
-    linkNavbar: Array
+    linkNavbar: Array,
+    contacts: Array,
+    social: Array
   }  
 }
 </script>
