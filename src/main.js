@@ -6,8 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
          faPlay, faSignal, faGear, faMaximize, faGlobe, faAddressBook,
-         faPlus, faChevronRight, faComments, faHouseChimney
-        } from '@fortawesome/free-solid-svg-icons'
+         faPlus, faChevronRight, faComments, faHouseChimney,
+         faCaretDown
+} from '@fortawesome/free-solid-svg-icons'
 
 import { faEnvelope as faEnvelopeRegular, faClock, faCopyright } from '@fortawesome/free-regular-svg-icons'
 
@@ -21,7 +22,7 @@ library.add(
   faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns,
   faPlay, faSignal, faGear, faMaximize, faGlobe, faAddressBook,
   faPlus, faChevronRight, faComments, faHouseChimney, faEnvelopeRegular,
-  faClock, faCopyright,
+  faClock, faCopyright, faCaretDown, 
   faFacebookF, faTwitter, faYoutube, faInstagram
 )
 /* add font awesome icon component */

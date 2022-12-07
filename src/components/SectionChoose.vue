@@ -35,6 +35,13 @@
             <div><font-awesome-icon icon="fa-solid fa-maximize" /></div>
             <div>Vimeo</div>
           </div>
+
+          <div class="durationVimeo">
+            <div class="time">00:10</div>
+            <div class="iconaDropdown">
+              <font-awesome-icon icon="fa-solid fa-caret-down"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -171,14 +178,14 @@ section
         font-size: 1.4rem;
         border-radius: 6px;
         position: absolute;
-        top: 60%;
+        top: 62%;
         left: 3%;        
       }
       .barraVimeo
       { 
         background: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 62%;
+        top: 64%;
         left: 20%;
         width: 340px;
         display: flex;
@@ -201,6 +208,29 @@ section
         }
       }
       
+      .durationVimeo
+      {
+        position: absolute;
+        top: 60%;
+        left: 19%;
+        box-shadow: 3px 3px 0 black;
+        .time
+        {
+          background-color: white;
+          color: black;
+          font-size: 0.5rem;
+          font-weight: bold;
+          padding: 5px;
+        }
+        .iconaDropdown
+        {
+          position: absolute;
+          top: 60%;
+          left: 35%;
+          
+        }
+        
+      }
     }
   }
   .divisione_Triangolare
