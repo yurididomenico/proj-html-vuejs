@@ -118,7 +118,7 @@ section
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    width: 70%;
+    width: 100%;
     
     .logoV
     {
@@ -167,19 +167,19 @@ section
       a
       { 
         background: rgba(0, 0, 0, 0.8);
-        padding: 6px 25px;
+        padding: 4px 25px;
         font-size: 1.4rem;
         border-radius: 6px;
         position: absolute;
-        top: 190px;
-        left: 10px;        
+        top: 60%;
+        left: 3%;        
       }
       .barraVimeo
       { 
         background: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 199px;
-        left: 80px;
+        top: 62%;
+        left: 20%;
         width: 340px;
         display: flex;
         align-items: center;
