@@ -38,8 +38,9 @@ section
       width: 315px;
       height: 15px;
       position: absolute;
-      top: 37px;
-      left: 323px;
+      top: 21%;
+      left: 23%;
+
     }
   }
 

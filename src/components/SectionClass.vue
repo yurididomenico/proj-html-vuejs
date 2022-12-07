@@ -72,6 +72,7 @@ section
     }
     .facilities-middle
     {
+      font-size: 0.8rem;
       span
       {
         color: #4a4b4b;

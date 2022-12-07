@@ -179,7 +179,11 @@ section
         border-radius: 6px;
         position: absolute;
         top: 62%;
-        left: 3%;        
+        left: 3%; 
+        &:hover
+        {
+          transform: scale(1.2);
+        }       
       }
       .barraVimeo
       { 
@@ -191,6 +195,8 @@ section
         display: flex;
         align-items: center;
         padding: 5px 10px;
+        
+
         .durataVideo
         {
           border: 2px solid grey;
@@ -205,6 +211,12 @@ section
         {
           color: #00b5fb;
           padding-left: 10px;
+        }
+
+
+        &:hover
+        {
+          cursor: pointer;
         }
       }
       

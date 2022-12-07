@@ -150,6 +150,14 @@ header
     {
       margin-right: 10px;
     }
+
+
+    &:hover
+    {
+      color: rgb(150, 57, 0);
+      scale: 1.2;
+      transition-duration: 400ms;
+    }
   }
   .iconeSocial > *
   {
@@ -169,6 +177,12 @@ header
     #paginaAttiva
     {
       color: #f09a3f;
+    }
+
+    img:hover
+    {
+      opacity: 0.8;
+      cursor: pointer;
     }
   }
   

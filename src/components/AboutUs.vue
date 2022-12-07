@@ -191,6 +191,12 @@ footer
           margin-bottom: 20px;
           font-size: 0.9rem;
           font-weight: bold;
+
+          &:hover
+          {
+            transform: scale(1.1);
+            transform: translateX(5%);
+          }
         }
       }
     }

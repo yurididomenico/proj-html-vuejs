@@ -49,13 +49,28 @@ section
     .bottoni
     {
       margin: 50px 0;
+
       a
       {
         padding: 10px 30px;
         margin: 0 10px;
         font-size: 0.8rem;
         font-weight: bold;
+
+        
       }
+
+      .bg-arancione:hover
+      {
+        background-color: #90591f;
+      }
+
+      .bg-azzurrino:hover
+      {
+        background-color: #068494;
+      }
+
+
     }
   }
 }

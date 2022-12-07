@@ -241,6 +241,7 @@ export default {
   text-decoration: none;
   list-style-type: none;
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 400ms;
 }
 ////////// GENERALE ////////////////////////////////////////////////////////////
 .contenitore

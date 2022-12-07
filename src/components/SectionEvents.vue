@@ -59,6 +59,8 @@ section
       display: block;
     }
 
+    
+
     .linea
     {
       background: rgba(229, 159, 25, 0.5);
